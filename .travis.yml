@@ -6,8 +6,11 @@ notifications:
   email:
     recipients:
       - rintze.zelle@gmail.com
-      - sylvester@keil.or.at
       - karcher@u.northwestern.edu
-      - charles.parnot@gmail.com
     on_success: change
     on_failure: always
+  webhooks:
+    urls:
+      - https://styles-update.zotero.net:8827/
+    on_success: always
+    on_failure: never
